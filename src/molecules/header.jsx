@@ -3,7 +3,7 @@ import "../styles/styles.css"
 
 function Header () {
 return <div className="header-container">
-    <img src={headerImg} alt="ToDo list" />
+    <img src={headerImg} alt="Todo list" />
     <span className="header-todo-label">To-Do List</span>
 </div>
 }

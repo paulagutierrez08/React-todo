@@ -1,4 +1,4 @@
-
+import "../styles/styles.css";
 
 function Layout ({children}) {
     const [headerComponent, addTasksComponent, tasksGroupComponent] = children;
@@ -9,7 +9,7 @@ function Layout ({children}) {
             <div className="add-tasks">{addTasksComponent}</div>
             <div className="tasks-group">{tasksGroupComponent}</div>
         </div>
-    );
+    )
 }
 
 export default Layout;

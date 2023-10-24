@@ -1,7 +1,7 @@
 import "../styles/styles.css";
 
 
-function Task ({taskText, onDeleteTask, index}){
+function Task ({taskText, onDeleteTask}){
     return(
     <div className="task-container"> 
         <div>

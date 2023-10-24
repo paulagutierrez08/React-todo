@@ -23,7 +23,7 @@ function AddTask ({onAddClick}){
                     <input type="text" name="add-task-ipt" id="add-task-ipt"  value={addTaskIpt} onChange={handleInputChange}/>
                 </div>
                 <div>
-                    <input className="task-btn" type="submit" value="Add" />
+                    <button className="task-btn" type="submit"  onClick={handleOnAddClick}> Add </button>
                 </div>
             </div>
         </form>
