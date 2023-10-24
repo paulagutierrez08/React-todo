@@ -10,9 +10,9 @@ function App() {
   const [tasks, setTasks] = React.useState([]); 
 
   const addTask = (taskName) => {
-    const isTaskNameInTask = tasks.includes(taskName.toLowerCase());
+    const isValidTaskName = tasks.includes(taskName.toLowerCase());
 
-    if (!isTaskNameInTask && taskName !== "") {
+    if (!isValidTaskName && taskName !== "") {
       setTasks([...tasks, taskName.toLowerCase()]);
     }
   };
@@ -30,5 +30,6 @@ function App() {
       <TasksGroup taskList={tasks} onDeleteTask={deleteTaks}/>
     </Layout>
   )
-  }
+  };
+
 export default App;
