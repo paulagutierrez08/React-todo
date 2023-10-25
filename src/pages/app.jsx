@@ -7,12 +7,12 @@ import TasksGroup from '../organisms/tasks-group';
 
 
 function App() {
-  const [tasks, setTasks] = React.useState([]); 
+  const [tasks, setTasks] = React.useState([]);
 
   const addTask = (taskName) => {
-    const isValidTaskName = tasks.includes(taskName.toLowerCase());
+    const isValidTaskName = !tasks.includes(taskName.toLowerCase()) && taskName !== '';
 
-    if (!isValidTaskName && taskName !== "") {
+    if (isValidTaskName) {
       setTasks([...tasks, taskName.toLowerCase()]);
     }
   };

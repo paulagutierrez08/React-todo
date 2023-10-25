@@ -13,7 +13,7 @@ function AddTask ({onAddClick}){
         e.preventDefault();
 
         onAddClick(addTaskIpt);
-        setAddTaskIpt(' ');
+        setAddTaskIpt('')
     }  
 
     return (
